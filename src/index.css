@@ -4,5 +4,5 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     overflow: hidden;
-    background: rgba(0, 0, 0, .7);
+    background: url('./img/bg.jpg') no-repeat;
 }

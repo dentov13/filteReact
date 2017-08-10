@@ -1,49 +1,106 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900";
-
 .app {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    background: #222;
+    top: 0;
+    left: 0;
 }
 
-.signup-form {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.header {
+    padding: 10px;
+    color: #61dafb;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 12px;
+    text-align: center;
 }
 
-.mdc-textfield {
-  margin-bottom: 1em;
+.content {
+    display: flex;
+    flex: 1;
 }
 
-.mdc-textfield__input {
-  width: 100%;
+.settings {
+    width: 30%;
+    max-width: 350px;
+    background: #2d2d2d;
 }
 
-.fade-appear {
-  margin-top: 30px;
-  opacity: .01;
+.settings .setting {
+    padding: 0 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.fade-appear.fade-appear-active {
-  margin-top: 0;
-  opacity: 1;
-  transition: opacity .5s ease, margin .5s ease
+.settings .setting label {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: .2em;
+    opacity: .5; 
 }
 
-.fade-leave {
-  margin-top: 0;
-  opacity: 1;
+.settings .setting input {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.fade-leave.fade-leave-active {
-  margin-top: -30px;
-  opacity: .01;
-  transition: opacity .3s ease, margin .5s ease;
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.filter {
+    flex: 1;
+}
+
+.filter .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: filter .125s ease;
+}
+
+.filter .image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.filter-list {
+    display: flex;
+    width: 100%;
+    height: calc(15% - 10px);
+    background: #353535;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.filter-list .filter {
+    flex: 1;
+    margin-right: 20px;
+    background: #353535;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.filter-list .filter:last-child {
+    margin-right: 0px;
+}
+
+.filter-list .filter:hover {
+    border: 3px solid #cc7a6f;
+}
+
+.filter-list .filter.selected {
+    border: 3px solid #cc7a6f;
 }
