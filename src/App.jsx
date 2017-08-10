@@ -8,7 +8,7 @@ import './App.css';
 
 class App extends Component {
   state = {
-    image: './img/macOS_wallpaper.jpg',
+    image: 'https://unsplash.it/1920/1280',
     selectedFilter: '',
     settings: {
       contrast: 100,
@@ -22,9 +22,9 @@ class App extends Component {
   handleChange = e => {
     const setting = e.target.id;
     const value = e.target.value;
-    settings = {...this.state.settings, [setting]: value};
+    const settings = {...this.state.settings, [setting]: value};
 
-    this.setState( selectedFilter: '', settings );
+    this.setState({ selectedFilter: '', settings });
   }
 
   updateSettings = (selectedFilter, settings) => {
@@ -52,9 +52,8 @@ class App extends Component {
           </main>
         </section>
       </div>
-    )
+    );
   }
-
 }
 
 export default App;

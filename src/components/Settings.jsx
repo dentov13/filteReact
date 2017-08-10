@@ -1,8 +1,12 @@
-function Settings({ contrst, hue, brightness, saturate, sepia }) {
-    const { contrast, hue, brightness, saturate, sepia } = settings;
+import React from 'react';
+
+import Range from './Range';
+
+function Settings({ settings, handleChange }) {
+    var { contrast, hue, brightness, saturate, sepia } = settings;
 
     return (
-        <aside className='settings'>
+        <aside className="settings">
             <Range
                 name="contrast"
                 value={contrast}
