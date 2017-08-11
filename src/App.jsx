@@ -38,7 +38,6 @@ class App extends Component {
       <div className='app'>
         <Header title='filteReact' />
         <section className='content'>
-          <Settings settings={settings} handleChange={this.handleChange} />
           <main className='main'>
             <Filter settings={settings}>
               <Image src={image} />
@@ -50,6 +49,7 @@ class App extends Component {
               updateSettings={this.updateSettings} 
             />
           </main>
+          <Settings settings={settings} handleChange={this.handleChange} />
         </section>
       </div>
     );

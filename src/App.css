@@ -11,7 +11,7 @@
 
 .header {
   padding: 10px;
-  color: #61dafb;
+  color: tomato;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .2em;
@@ -39,7 +39,7 @@
 .settings .setting label {
   font-weight: 400;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: tomato;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
