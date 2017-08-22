@@ -1,13 +1,14 @@
 {
   "name": "filteReact",
   "version": "0.1.0",
-  "homepage": "https://dentov13.github.io/works/filtereact",
+  "homepage": "https://dentov13.github.io/works/filtereact/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "material-components-web": "^0.16.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-transition-group": "^2.2.0"
+    "react-transition-group": "^2.2.0",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.2"
